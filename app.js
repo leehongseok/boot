@@ -46,8 +46,11 @@ app.use(function(req, res, next) {
   next(err);
 });
 
-router.get('/partials',function(req,res,next){
-  res.render('sub1');
+router.get('./sub', function(req,res,next){
+  res.render('sub');
+});
+router.get('./subb', function(req,res,next){
+  res.render('subb');
 });
 // error handler
 app.use(function(err, req, res, next) {
