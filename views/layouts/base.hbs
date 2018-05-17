@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>{{title}}</title>
-
+    <link rel='stylesheet' href='/stylesheets/reset.css' />
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <link rel='stylesheet' href='/stylesheets/bootstrap.css' />
     <link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
@@ -11,7 +11,60 @@
     <script src="/javascripts/bootstrap.js"></script>
   </head>
   <body>
-    
-    {{{body}}}
+    <header class="bg-242a3a">
+      <div class="header-top">
+        <div class="header-top-center container ">
+          <ul class="row justify-content-end">
+            <li class="mx-2 figure-caption py-1 px-1">로그인중</li>
+            <li class="mx-2 figure-caption py-1 px-1">마이페이지</li>
+            <li class="mx-2 figure-caption badge-dark py-1 px-2">로그아웃</li>
+          </ul>
+        </div>
+      </div>
+      <div class="header-middle">
+        <div class="header-top-middle container">
+          <div class="row justify-content-between mt-4 mb-4">
+            <img src="/images/headerleft.png" alt="">
+            <img src="/images/logo.png" class="mt-2" style="height:54px;" alt="">
+            <img src="/images/numbercall.png"alt="">
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="header-top-bottom container">
+          <ul class="row justify-content-between">
+            <li><a href="" class=" text-center color-fff py-4 btn-block">버튼</a></li>
+            <li><a href="" class=" text-center color-fff py-4 btn-block">병원소개</a></li>
+            <li><a href="" class=" text-center color-fff py-4 btn-block">의료진소개</a></li>
+            <li><a href="" class=" text-center color-fff py-4 btn-block">첨단진료시스템</a></li>
+            <li><a href="" class=" text-center color-fff py-4 btn-block">전문진료과목</a></li>
+            <li><a href="" class=" text-center color-fff py-4 btn-block">커뮤니티</a></li>
+            <li><a href="" class=" text-center color-fff py-4 btn-block">상담예약</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section>
+      {{{body}}}
+    </section>
+    <footer class="bg-242a3a col-form-label-sm">
+      <div class=" container">
+        <div class=" row">
+          <img src="/images/footer-logo.png" class="col-md-auto mt-sm-4" style="height:54px" alt="">
+          <div class="col-md-auto">
+            <ul class="row mt-sm-3">
+              <li><a href="" class="col-sm-1 color-fff">병원소개</a></li>
+              <li><a href="" class="col-sm-1 color-fff">이용약관</a></li>
+              <li><a href="" class="col-sm-1 color-fff">개인정보취급방침</a></li>
+              <li><a href="" class="col-sm-1 color-fff">이메일주소 무단수집 거부</a></li>
+              <li><a href="" class="col-sm-1 color-fff">오시는 길</a></li>
+            </ul>
+            <p class="navbar-dark">상호명: 비전안과 대표자 : 이담호 대표번호 : 301.548.1614 팩스 : 031.548.1632</p>
+            <p class="navbar-dark">사업자등록번호 : 211-90-14288 주소 : 경기도 용인시 수지구 성복동 67-6</p>
+            <p class="navbar-dark">Copyright @2018 VISION EYE CENTER. ALL Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
