@@ -1,12 +1,10 @@
 var express = require('express');
 var path = require('path');
-//var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var app = express();
 var sassMiddleware = require('node-sass-middleware');
-
 
 var exphbs  = require('express-handlebars');
 app.engine('hbs', exphbs({
@@ -30,7 +28,8 @@ app.use(sassMiddleware({
   src: path.join(__dirname, 'public'),
   dest: path.join(__dirname, 'public'),
   indentedSyntax: false, // true = .sass and false = .scss
-  sourceMap: true
+  sourceMap: true,
+  outputstyle:'compressed'
 }));
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -46,12 +45,7 @@ app.use(function(req, res, next) {
   next(err);
 });
 
-router.get('./sub', function(req,res,next){
-  res.render('sub');
-});
-router.get('./subb', function(req,res,next){
-  res.render('subb');
-});
+
 // error handler
 app.use(function(err, req, res, next) {
   // set locals, only providing error in development
