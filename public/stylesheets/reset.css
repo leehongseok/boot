@@ -41,7 +41,6 @@ body{
 	background-color:#fafafa;/* IE6 잔상방지 */ /* text-align:center; */
 	min-height:100vh;
 	position: relative;
-	padding-bottom:280px;
 	box-sizing:border-box;
 }
 @media screen and (max-width: 1100px) {body{padding-bottom:70%;}}
